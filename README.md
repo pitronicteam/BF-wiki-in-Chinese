@@ -1,2 +1,2 @@
-# Initial page
+# BF wiki 中文站
 
