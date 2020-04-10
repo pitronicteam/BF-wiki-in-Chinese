@@ -1,1 +1,2 @@
-# BF-wiki-in-Chinese
+# Initial page
+
