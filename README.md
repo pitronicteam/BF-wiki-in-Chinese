@@ -20,11 +20,13 @@
 
 本站由市民姜先生（[DusKing1](https://github.com/DusKing1)）及AirFleet（[AirFleetTeam](https://github.com/AirFleetTeam)）维护。欢迎关注微信公众号AirFleet，旨在帮助有能力的中文玩家成为“大神”，商业合作请后台留言。
 
-![&#x626B;&#x7801;&#x5173;&#x6CE8;AirFleet](.gitbook/assets/af-qrcode.jpg)
+  
 
-本站的大部分内容的初稿都是由市民姜先生独立完成的，如果您很欣赏他的能力，并觉得他的翻译工作对您有帮助，请考虑打赏以支持其工作。  
+![&#x626B;&#x7801;&#x5173;&#x6CE8;AirFleet&#x516C;&#x4F17;&#x53F7;](.gitbook/assets/af-qrcode.jpg)
 
-![](.gitbook/assets/xiao-jiang-de-zan-shang-ma.jpg)
+本站的大部分内容的初稿都是由市民姜先生独立完成的，如果您很欣赏他的能力，并觉得他的翻译工作对您有帮助，请考虑打赏以支持其工作。
+
+ ![](.gitbook/assets/xiao-jiang-de-zan-shang-ma.jpg) 
 
 部分译文参考自SmartFOX。
 
