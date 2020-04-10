@@ -5,4 +5,5 @@
 ## 调参技巧
 
 * [Betaflight 4.1](tiao-can-ji-qiao/betaflight-4.1.md)
+* [Betaflight 4.0](tiao-can-ji-qiao/betaflight-4.0.md)
 
