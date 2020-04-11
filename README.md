@@ -12,9 +12,7 @@
 
 * 破除语言障碍，自由学习并探索betaflight的内在原理
 * 寻找潜在的优质贡献者
-* 防止诸位中文玩家迷路，误入kz等人的带货教程
-
-![](.gitbook/assets/zhen-zheng-de-gong-jiang-jing-shen.png)
+* 防止诸位中文玩家迷路
 
 ### 维护
 
