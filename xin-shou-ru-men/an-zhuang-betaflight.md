@@ -32,7 +32,7 @@
 2. 将设备置于DFU模式。如果这是第一次烧写Betaflight，则需要在插入USB之前短路BL或Boot（或按住BOOT按钮）。
 3. 打开Zadig。
 4. 选项 -&gt; 列出所有设备。
-5. 单击下拉框，然后单击列出的设备STM32 BOOTLOADER  ![](../.gitbook/assets/zadig-dfu.png) 
+5. 单击下拉框，然后单击列出的设备STM32 BOOTLOADER   ![](../.gitbook/assets/zadig-dfu.png) 
 6. 在绿色箭头右侧的框中，选择WinUSB（v6.1.7600.16385）
 7. 单击安装驱动程序。
 8. 安装完成后，重新启动计算机（在重启这一点上，您可以作弊，只需要确保浏览器重启，但这样并不能保证其仍能正常工作）。如果重启期间USB电源仍然有输出，飞控应保持在DFU模式下。如果重启导致USB断电，请再次执行步骤2。
