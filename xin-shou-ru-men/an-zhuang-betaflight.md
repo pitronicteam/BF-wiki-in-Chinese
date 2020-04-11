@@ -130,11 +130,11 @@ STM32芯片需要3.3V的电源才能正常运行，因此需要使用板载专�
 
 下面的视频链接提供了有关Betaflight的非常全面的使用指南以及有关配置的最佳实践指导：
 
-{% embed url="http://www.youtube.com/watch?v=xSzO6HP6yzs" %}
+http://www.youtube.com/watch?v=xSzO6HP6yzs
 
 Joshua Bardwell有关Betaflight配置程序的新视频： 
 
-{% embed url="https://www.youtube.com/watch?v=VAHUZZXIn9o" %}
+https://www.youtube.com/watch?v=VAHUZZXIn9o
 
 此处提供有关如何使用Betaflight刷写飞控的分步指南： [http://quadquestions.com/blog/2015/12/25/betaflight\_flashing/](http://quadquestions.com/blog/2015/12/25/betaflight_flashing/)
 
