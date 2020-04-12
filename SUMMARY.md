@@ -29,6 +29,7 @@
 
 ## 故障排除
 
+* [OSD字体上传问题](gu-zhang-pai-chu/osd-zi-ti-shang-chuan-wen-ti.md)
 * [DFU劫持](gu-zhang-pai-chu/dfu-jie-chi.md)
 
 ## 开发
