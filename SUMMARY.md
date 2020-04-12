@@ -23,4 +23,5 @@
 * [统一目标与您](she-zhi-ji-geng-duo/tong-yi-mu-biao-yu-nin.md)
 * [D\_MIN](she-zhi-ji-geng-duo/d_min.md)
 * [整合式偏航控制](she-zhi-ji-geng-duo/zheng-he-shi-pian-hang-kong-zhi.md)
+* [图传表](she-zhi-ji-geng-duo/tu-chuan-biao.md)
 
