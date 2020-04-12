@@ -25,3 +25,7 @@
 * [整合式偏航控制](she-zhi-ji-geng-duo/zheng-he-shi-pian-hang-kong-zhi.md)
 * [图传表](she-zhi-ji-geng-duo/tu-chuan-biao.md)
 
+## 故障排除
+
+* [DFU劫持](gu-zhang-pai-chu/dfu-jie-chi.md)
+
