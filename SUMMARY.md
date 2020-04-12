@@ -5,6 +5,7 @@
 ## 新手入门
 
 * [安装Betaflight](xin-shou-ru-men/an-zhuang-betaflight.md)
+* [飞行技巧](xin-shou-ru-men/fei-hang-ji-qiao.md)
 
 ## 调参技巧
 
