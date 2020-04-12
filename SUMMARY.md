@@ -32,4 +32,5 @@
 ## 开发
 
 * [飞控板设计资源](kai-fa/fei-kong-ban-she-ji-zi-yuan.md)
+* [赞助商](zan-zhu-shang.md)
 
