@@ -17,3 +17,7 @@
 * [Betaflight 4.1](tiao-can-ji-qiao/betaflight-4.1.md)
 * [Betaflight 4.0](tiao-can-ji-qiao/betaflight-4.0.md)
 
+## 设置及更多
+
+* [适用于4.x的串行黑盒日志记录](she-zhi-ji-geng-duo/kuo-yong-yu-4.x-de-chuan-hang-hei-he-ri-zhi-ji-lu.md)
+
