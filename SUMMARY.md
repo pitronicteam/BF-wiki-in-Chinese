@@ -21,4 +21,5 @@
 
 * [适用于4.x的串行黑盒日志记录](she-zhi-ji-geng-duo/kuo-yong-yu-4.x-de-chuan-hang-hei-he-ri-zhi-ji-lu.md)
 * [统一目标与您](she-zhi-ji-geng-duo/tong-yi-mu-biao-yu-nin.md)
+* [D\_MIN](she-zhi-ji-geng-duo/d_min.md)
 
