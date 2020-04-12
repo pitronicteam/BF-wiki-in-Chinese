@@ -29,3 +29,7 @@
 
 * [DFU劫持](gu-zhang-pai-chu/dfu-jie-chi.md)
 
+## 开发
+
+* [飞控板设计资源](kai-fa/fei-kong-ban-she-ji-zi-yuan.md)
+
