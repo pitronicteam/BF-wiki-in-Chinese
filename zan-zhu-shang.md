@@ -6,9 +6,9 @@ description: BF wiki中文站的赞助商
 
 下面是本站的赞助商广告、返修地址，感谢以下赞助商的倾情赞助！
 
-### 推广图文与链接
+###   ![](.gitbook/assets/diatone.png) 
 
-TODO：招商哦
+![](.gitbook/assets/diatone.png)
 
 ### 返修地址信息
 
