@@ -8,7 +8,7 @@ description: BF wiki中文站的赞助商
 
 [![](.gitbook/assets/diatone.png)](https://jahoooo.cn/)
 
-### 返修地址信息
+## 返修地址信息
 
 TODO：有待进一步完善
 
