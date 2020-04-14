@@ -21,6 +21,7 @@
 
 * [适用于4.x的串行黑盒日志记录](she-zhi-ji-geng-duo/kuo-yong-yu-4.x-de-chuan-hang-hei-he-ri-zhi-ji-lu.md)
 * [统一目标与您](she-zhi-ji-geng-duo/tong-yi-mu-biao-yu-nin.md)
+* [资源重新映射](she-zhi-ji-geng-duo/zi-yuan-zhong-xin-ying-she.md)
 * [重新映射电机](she-zhi-ji-geng-duo/zhong-xin-ying-she-dian-ji.md)
 * [瘫痪模式](she-zhi-ji-geng-duo/tan-huan-mo-shi.md)
 * [D\_MIN](she-zhi-ji-geng-duo/d_min.md)
