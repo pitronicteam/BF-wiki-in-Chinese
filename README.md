@@ -16,7 +16,7 @@
 
 ### 维护
 
-本站由市民姜先生（[DusKing1](https://github.com/DusKing1)）及AirFleet（[AirFleetTeam](https://github.com/AirFleetTeam)）维护。欢迎关注微信公众号AirFleet，旨在帮助有能力的中文玩家成为“大神”，商业合作请后台留言。
+本站由Betaflight翻译团队成员市民姜先生（[DusKing1](https://github.com/DusKing1)）及AirFleet（[AirFleetTeam](https://github.com/AirFleetTeam)）维护。欢迎关注微信公众号AirFleet，旨在帮助有能力的中文玩家成为“大神”，商业合作请后台留言。
 
 ![&#x626B;&#x7801;&#x5173;&#x6CE8;AirFleet&#x516C;&#x4F17;&#x53F7;](.gitbook/assets/af-qrcode.jpg)
 
