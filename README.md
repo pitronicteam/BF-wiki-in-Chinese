@@ -43,7 +43,17 @@ _**警告：这是测试版！**_
 * 寻找潜在的优质贡献者
 * 防止诸位中文玩家迷路
 
-### 维护
+### 使用指南
+
+右上角有搜索框，您可以使用搜索框来搜索您感兴趣的内容。
+
+如果某个内容在官方wiki上有而在这里没有：
+
+* 该篇中文wiki正在调整排版马上发布，可以移步AirFleet公众号查看
+* 该篇wiki过于陈旧，已不具有任何参考价值
+* 该篇wiki尚未翻译完成
+
+### 贡献与维护
 
 本站由Betaflight翻译团队成员市民姜先生（[DusKing1](https://github.com/DusKing1)）及AirFleet（[AirFleetTeam](https://github.com/AirFleetTeam)）维护。欢迎关注微信公众号AirFleet，旨在帮助有能力的中文玩家成为“大神”，商业合作请后台留言。
 
@@ -55,11 +65,15 @@ _**警告：这是测试版！**_
 
 部分译文参考自SmartFOX。
 
+如果您觉得Betaflight对您非常有用，请考虑资金资助Betaflight开发团队：
+
+[![Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://paypal.me/betaflight)
+
 ### 赞助商
 
-感谢我们的赞助商为我们提供的工作动力。请访问[赞助商页面](zan-zhu-shang-1/zan-zhu-shang.md)查看我们的赞助商列表以及他们的高质量产品。
+感谢我们的赞助商为我们提供的工作动力。请访问[赞助商页面](zan-zhu-shang-1/zan-zhu-shang.md)查看本站的赞助商列表以及他们的高质量产品。
 
-想成为赞助商？微信公众号后台留言即可。
+想成为本站赞助商？微信公众号后台留言即可。
 
 
 
