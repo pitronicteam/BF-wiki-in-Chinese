@@ -27,6 +27,7 @@
 * [D\_MIN](she-zhi-ji-geng-duo/d_min.md)
 * [整合式偏航控制](she-zhi-ji-geng-duo/zheng-he-shi-pian-hang-kong-zhi.md)
 * [图传表](she-zhi-ji-geng-duo/tu-chuan-biao.md)
+* [双向Dshot和RPM滤波器](she-zhi-ji-geng-duo/shuang-xiang-dshot-he-rpm-lv-bo-qi.md)
 * [前馈2.0](she-zhi-ji-geng-duo/qian-kui-2.0.md)
 
 ## 故障排除
