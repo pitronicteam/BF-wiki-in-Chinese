@@ -23,6 +23,7 @@
 * [统一目标与您](she-zhi-ji-geng-duo/tong-yi-mu-biao-yu-nin.md)
 * [资源重新映射](she-zhi-ji-geng-duo/zi-yuan-zhong-xin-ying-she.md)
 * [重新映射电机](she-zhi-ji-geng-duo/zhong-xin-ying-she-dian-ji.md)
+* [LED灯带](she-zhi-ji-geng-duo/led-deng-dai.md)
 * [瘫痪模式](she-zhi-ji-geng-duo/tan-huan-mo-shi.md)
 * [D\_MIN](she-zhi-ji-geng-duo/d_min.md)
 * [整合式偏航控制](she-zhi-ji-geng-duo/zheng-he-shi-pian-hang-kong-zhi.md)
