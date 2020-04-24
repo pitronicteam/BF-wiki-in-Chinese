@@ -1,6 +1,7 @@
 # Table of contents
 
 * [BF wiki 中文站](README.md)
+* [导航](dao-hang.md)
 
 ## 新手入门
 
