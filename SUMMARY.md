@@ -2,6 +2,7 @@
 
 * [BF wiki 中文站](README.md)
 * [导航](dao-hang.md)
+* [赞助商](zan-zhu-shang.md)
 
 ## 新手入门
 
@@ -40,8 +41,4 @@
 ## 开发
 
 * [飞控板设计资源](kai-fa/fei-kong-ban-she-ji-zi-yuan.md)
-
-## 赞助商 <a id="zan-zhu-shang-1"></a>
-
-* [赞助商](zan-zhu-shang-1/zan-zhu-shang.md)
 
