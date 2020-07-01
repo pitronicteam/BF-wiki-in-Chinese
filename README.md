@@ -42,7 +42,7 @@
 
 感谢我们的赞助商为我们提供的工作动力。更多信息请访问[赞助商页面](zan-zhu-shang.md)。
 
-[![](.gitbook/assets/diatone.png)](https://www.jahoooo.cn/)   [![](.gitbook/assets/gemfan-qian-feng-mo-xing.png)](http://cn.gemfanhobby.com/)  [![](.gitbook/assets/iflight-rc.jpg)](https://iflight-rc.taobao.com) 
+[![](.gitbook/assets/diatone.png)](https://www.jahoooo.cn/)     [![](.gitbook/assets/iflight-rc.jpg)](https://iflight-rc.taobao.com) 
 
 想成为本站赞助商？微信公众号后台留言即可。
 
