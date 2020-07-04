@@ -460,14 +460,108 @@ led 15 8,7:U:FW:0
        RING 16-27
 ```
 
-LED3、6、9应该朝下放置在飞机下方。  
+LED0、3、6、9应该朝下放置在飞机下方。  
 LED1-2、4-5、7-8和10-11应分别朝向东/北/西/南。  
-LED12-13应朝下放置，LED14-15应该朝上放置。  
+LED12-13应朝下放置，LED14-15应该朝上放置，均放置在中部。  
 尾部的LED环16-27应该朝南放置。
 
 这是默认设置，因此如果您不想将LED上下放置在中间，只需要连接前12个LED。
 
 16 LED 配置示例
 
+```text
+led 0 15,15:SD:IA:0
+led 1 8,8:E:FW:0
+led 2 8,7:E:FW:0
+led 3 15,0:ND:IA:0
+led 4 7,7:N:FW:0
+led 5 8,7:N:FW:0
+led 6 0,0:ND:IA:0
+led 7 7,7:W:FW:0
+led 8 7,8:W:FW:0
+led 9 0,15:SD:IA:0
+led 10 7,8:S:FW:0
+led 11 8,8:S:FW:0
+led 12 7,7:D:FW:0
+led 13 8,7:D:FW:0
+led 14 7,7:U:FW:0
+led 15 8,7:U:FW:0
+```
 
+转换为实际位置：
+
+```text
+     6             3
+      \           / 
+       \   5-4   / 
+      7 \ FRONT / 2
+        | 12-15 | 
+      8 /  BACK \ 1
+       /  10-11  \
+      /           \ 
+     9             0
+```
+
+LED0、3、6、9应该朝下放置在飞机下方。  
+LED1-2、4-5、7-8和10-11应分别朝向东/北/西/南。  
+LED12-13应朝下放置，LED14-15应该朝上放置，均放置在中部。
+
+28 LED 配置示例
+
+```text
+#right rear cluster
+led 0 9,9:S:FWT:0
+led 1 10,10:S:FWT:0
+led 2 11,11:S:IA:0
+led 3 11,11:E:IA:0
+led 4 10,10:E:AT:0
+led 5 9,9:E:AT:0
+# right front cluster
+led 6 10,5:S:F:0
+led 7 11,4:S:F:0
+led 8 12,3:S:IA:0
+led 9 12,2:N:IA:0
+led 10 11,1:N:F:0
+led 11 10,0:N:F:0
+# center front cluster
+led 12 7,0:N:FW:0
+led 13 6,0:N:FW:0
+led 14 5,0:N:FW:0
+led 15 4,0:N:FW:0
+# left front cluster
+led 16 2,0:N:F:0
+led 17 1,1:N:F:0
+led 18 0,2:N:IA:0
+led 19 0,3:W:IA:0
+led 20 1,4:S:F:0
+led 21 2,5:S:F:0
+# left rear cluster
+led 22 2,9:W:AT:0
+led 23 1,10:W:AT:0
+led 24 0,11:W:IA:0
+led 25 0,11:S:IA:0
+led 26 1,10:S:FWT:0
+led 27 2,9:S:FWT:0
+```
+
+```text
+       16-18  9-11
+19-21 \           / 6-8
+       \  12-15  / 
+        \ FRONT /
+        /  BACK \
+       /         \
+22-24 /           \ 3-5
+       25-27   0-2  
+```
+
+在这种情况下，所有LED应该朝外放置。
+
+注意：此配置是专门为[Alien Spider AQ50D PRO 250mm机架](http://www.goodluckbuy.com/alien-spider-aq50d-pro-250mm-mini-quadcopter-carbon-fiber-micro-multicopter-frame.html)设计的。
+
+故障排除
+
+初次通电时，灯条上的所有LED灯珠都将被设置为白色。这意味着如果您的测量设备反应速度足够快的话，则可以检测电流消耗情况。大多数5050封装的LED灯珠的功耗为0.3W。这也意味着您可以确保灯条上每个LED的灯珠中的R、G、B都可以正常工作。经过短暂的延迟之后，LED将显示上锁时的颜色序列/电池电量不足警告序列。
+
+您还应检查LED\_STRIP功能是否已正确启用，并且与其他功能没有冲突
 
