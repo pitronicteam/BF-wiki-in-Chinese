@@ -42,16 +42,16 @@ LED灯带具有三个子模式：STATUS，RACE和BEACON。分别使用三个独�
    * 对于该操作，选择“RC Rate 调整”。（“执行”） 这样操作意味着余下的设置将在CLI中进行配置，因为配置程序10.4.0及更早版本不支持在图形页面内开启LED配置文件选择。仅选择“ RC Rate 调整”是为了使接下来在CLI中的配置更容易一些。
    * 选择“通过通道”以匹配上面选择的AUX通道。（“当通道”）。
    * 保存
-3. 打开CLI并键入adjrange然后回车。
+3. 打开CLI并键入`adjrange`然后回车。
 4. 复制上面步骤2中配置的adjrange，并将其粘贴到命令窗口中。然后将通道范围后的“1”改为“30”，然后回车。键入save，并再次回车。现在将保存已配置的adjrange，并且飞控将重启。
 5. 在您的遥控器上配置对应的AUX通道。更改此通道之后，所选的LED灯带配置文件将在STATUS、RACE和BEACON之间切换，这样做时您应该会看到LED功能发生了变化。
 
 #### 选项2：使用CLI来选择LED配置文件（即不通过遥控器来选择LED配置文件）
 
 1. 打开CLI。
-2. 键入get ledstrip\_profile并回车，以显示当前选择的LED配置文件。
-3. 键入set ledstrip\_profile = x，其中x是配置文件的名称，可以是STATUS，RACE或BEACON，然后按回车键。
-4. 键入save并回车，以保存所选的LED配置文件。
+2. 键入`get ledstrip_profile`并回车，以显示当前选择的LED配置文件。
+3. 键入`set ledstrip_profile = x`，其中x是配置文件的名称，可以是STATUS，RACE或BEACON，然后按回车键。
+4. 键入`save`并回车，以保存所选的LED配置文件。
 
 #### 选项3：使用OSD
 
@@ -63,9 +63,9 @@ LED灯带具有三个子模式：STATUS，RACE和BEACON。分别使用三个独�
 #### RACE模式的颜色：可以使用CLI来配置RACE模式的颜色
 
 1. 打开CLI。
-2. 键入get ledstrip\_race\_color并回车，以显示当前RACE模式的颜色编号。
-3. 键入set ledstrip\_race\_color = x，其中X是颜色编号。
-4. 键入save并回车，以保存RACE模式的颜色。
+2. 键入`get ledstrip_race_color`并回车，以显示当前RACE模式的颜色编号。
+3. 键入`set ledstrip_race_color = x`，其中X是颜色编号。
+4. 键入`save`并回车，以保存RACE模式的颜色。
 
 ## 支持的硬件
 
