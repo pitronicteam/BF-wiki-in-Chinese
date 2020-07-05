@@ -11,6 +11,7 @@
 
 ## 发行说明
 
+* [Betaflight 4.2](fa-hang-shuo-ming/betaflight-4.2.md)
 * [Betaflight 4.1](fa-hang-shuo-ming/betaflight-4.1.md)
 * [Betaflight 4.0](fa-hang-shuo-ming/betaflight-4.0.md)
 
