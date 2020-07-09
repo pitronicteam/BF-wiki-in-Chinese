@@ -13,5 +13,5 @@ description: BF wiki中文站的赞助商
 * [DIATONE 大通创新](https://www.jahoooo.cn/)
 * [Gemfan 乾丰模型](http://cn.gemfanhobby.com/)
 * [iFlight 翼飞智能科技](https://iflight-rc.taobao.com)
-* RUSH 亦是科技
+* RUSHFPV 亦是科技
 
