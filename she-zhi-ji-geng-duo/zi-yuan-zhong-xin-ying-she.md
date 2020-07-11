@@ -22,7 +22,34 @@ IO重映射使您可以配置MCU上的引脚，以将其用于各种功能。这
 
 请注意，通过CLI更改引脚映射后，必须使用`save`命令保存并重启。
 
-【这里有一张图片，下次再插入】
+![&#x56FE;&#xFF1A;&#x4E0D;&#x540C;resource&#x547D;&#x4EE4;&#x53D8;&#x4F53;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;](../.gitbook/assets/image.png)
+
+### 可用功能、值及对应约束条件
+
+| 功能 | 值 | 描述 | 约束条件 |
+| :--- | :--- | :--- | :--- |
+| ADC\_BATT | -- | 电池电压传感器 | 只能映射到其他ADC引脚 |
+| ADC\_CURR | -- | 电池电流传感器 | 只能映射到其他ADC引脚 |
+| ADC\_RSSI | -- | 接收机的模拟RSSI输入 | 只能映射到其他ADC引脚 |
+| BEEPER | -- | 信号蜂鸣器 | 通常直接接至蜂鸣器晶体管的基极 |
+| CAMERA\_CONTROL | -- | FPV摄像头由OSD控制 | 由摇杆模拟按钮。直接接线并需要外接电容/电阻，因此现有的CAMERA\_CONTROL尽可用于某些低频应用中，例如SmartAudio |
+| ESCSERIAL | ？ | ？ | ？ |
+| I2C\_SCL | 1-n |  |  |
+| I2C\_SDA | 1-n |  |  |
+| INVERTER |  |  |  |
+| LED | 1-3 | LED指示灯 | 请勿与LED\_STRIP混淆 |
+| LED\_STRIP | -- | WS2812 LED数据 | 如果未连接/未使用WS2812，LED是很好的替代选项 |
+| MOTOR | 1-n | 电机信号 | 电机引脚之间的映射交换应正常工作。使用其他引脚则可能不起作用（DMA与Dshot冲突）。 |
+| PPM | -- | 接收机PPM输入 | 是可选功能的良好选项 |
+| PWM | 1-n | 接收机PWM输入 | ？ |
+| SERIAL\_RX | 1-n | 串行接收引脚 | 无法重映射到其他引脚，但可以指定不同的功能（参阅软件串行端口） |
+| SERIAL\_TX | 1-n | 串行发送引脚 | SERIAL\_RX/SERIAL\_TX 11-12 是软串口\#1和\#2 |
+| SERVO | 1-n | 舵机信号 | ？ |
+| SONAR\_ECHO | -- |  |  |
+| SONAR\_TRIGGER | -- |  |  |
+| SPI\_MISO | 1-n |  |  |
+| SPI\_MOSI | 1-n |  |  |
+| SPI\_SCK | 1-n |  |  |
 
 ### 包含使用resource命令的示例的Wiki页面：
 
