@@ -28,7 +28,7 @@
 
 ### 贡献与维护
 
-本站由Betaflight翻译团队成员市民姜先生（[DusKing1](https://github.com/DusKing1)）及AirFleet（[AirFleetTeam](https://github.com/AirFleetTeam)）维护，并得到了Betaflight核心团队的支持。欢迎关注微信公众号AirFleet，旨在帮助有能力的中文玩家成为“大神”，商业合作请后台留言。
+本站由Betaflight翻译团队成员市民姜先生（[DusKing1](https://github.com/DusKing1)）及Pitronic（[PitronicTeam](https://github.com/pitronicteam)）维护，并得到了Betaflight核心团队的支持。欢迎关注微信公众号Pitronic，旨在帮助有能力的中文玩家成为“大神”，商业合作请后台留言。
 
 ![](.gitbook/assets/qrcode.png)
 
