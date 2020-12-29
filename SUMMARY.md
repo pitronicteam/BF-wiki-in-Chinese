@@ -20,20 +20,35 @@
 * [Betaflight 4.1](tiao-can-ji-qiao/betaflight-4.1.md)
 * [Betaflight 4.0](tiao-can-ji-qiao/betaflight-4.0.md)
 
-## 设置及更多
+## 设置
 
-* [适用于4.x的串行黑盒日志记录](she-zhi-ji-geng-duo/kuo-yong-yu-4.x-de-chuan-hang-hei-he-ri-zhi-ji-lu.md)
-* [统一目标与您](she-zhi-ji-geng-duo/tong-yi-mu-biao-yu-nin.md)
-* [解锁顺序与安全](she-zhi-ji-geng-duo/jie-suo-shun-xu-yu-an-quan.md)
-* [资源重新映射](she-zhi-ji-geng-duo/zi-yuan-zhong-xin-ying-she.md)
-* [重新映射电机](she-zhi-ji-geng-duo/zhong-xin-ying-she-dian-ji.md)
-* [LED灯带](she-zhi-ji-geng-duo/led-deng-dai.md)
-* [瘫痪模式](she-zhi-ji-geng-duo/tan-huan-mo-shi.md)
-* [D\_MIN](she-zhi-ji-geng-duo/d_min.md)
-* [整合式偏航控制](she-zhi-ji-geng-duo/zheng-he-shi-pian-hang-kong-zhi.md)
-* [图传表](she-zhi-ji-geng-duo/tu-chuan-biao.md)
-* [双向Dshot和RPM滤波器](she-zhi-ji-geng-duo/shuang-xiang-dshot-he-rpm-lv-bo-qi.md)
-* [前馈2.0](she-zhi-ji-geng-duo/qian-kui-2.0.md)
+* [LED灯带](she-zhi/led-deng-dai.md)
+* [瘫痪模式](she-zhi/tan-huan-mo-shi.md)
+* [资源重新映射](she-zhi/zi-yuan-zhong-xin-ying-she.md)
+* [统一目标与您](she-zhi/tong-yi-mu-biao-yu-nin.md)
+
+## 摄像头、图传和OSD
+
+* [图传表](she-xiang-tou-tu-chuan-he-osd/tu-chuan-biao.md)
+
+## 电机与电调
+
+* [双向Dshot和RPM滤波器](dian-ji-yu-dian-tiao/shuang-xiang-dshot-he-rpm-lv-bo-qi.md)
+* [重新映射电机](dian-ji-yu-dian-tiao/zhong-xin-ying-she-dian-ji.md)
+
+## PID、Rate和滤波器
+
+* [D\_MIN](pidrate-he-lv-bo-qi/d_min.md)
+* [前馈2.0](pidrate-he-lv-bo-qi/qian-kui-2.0.md)
+* [整合式偏航控制](pidrate-he-lv-bo-qi/zheng-he-shi-pian-hang-kong-zhi.md)
+
+## 接收机/HID
+
+* [解锁顺序与安全](jie-shou-ji-hid/jie-suo-shun-xu-yu-an-quan.md)
+
+## 串行通信
+
+* [适用于4.x的串行黑盒日志记录](chuan-hang-tong-xin/kuo-yong-yu-4.x-de-chuan-hang-hei-he-ri-zhi-ji-lu.md)
 
 ## 故障排除
 
