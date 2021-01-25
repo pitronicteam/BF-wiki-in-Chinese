@@ -22,7 +22,7 @@
 
 ## 设置
 
-* [Untitled](she-zhi/untitled.md)
+* [GPS救援模式](she-zhi/untitled.md)
 * [LED灯带](she-zhi/led-deng-dai.md)
 * [瘫痪模式](she-zhi/tan-huan-mo-shi.md)
 * [资源重新映射](she-zhi/zi-yuan-zhong-xin-ying-she.md)
