@@ -36,8 +36,6 @@
 
 ![](.gitbook/assets/xiao-jiang-de-zan-shang-ma.jpg)
 
-部分译文参考自SmartFOX。
-
 
 
 ### 赞助商
