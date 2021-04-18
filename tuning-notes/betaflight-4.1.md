@@ -30,7 +30,7 @@ Bitbanged Dshot仍然是一种较新的协议，请在RC阶段到GitHub代码仓
 
 ### 进一步简化的RPM滤波配置
 
-现在，启用基于RPM回传数据的陷波滤波器\(组\)比以往更容易了。默认情况下`dshot_bitbang= AUTO`，无需再在部分F4和F7飞控上自行修改定时器和DMA资源。当双向Dshot启用后，RPM回传将被自动激活，这可以在10.6配置器中手动完成。旧的电调固件则需要关闭dshot\_bitbang`set dshot_bitbang = OFF`。更多相关信息，请参阅最新的《[双向Dshot和RPM滤波](../dian-ji-yu-dian-tiao/shuang-xiang-dshot-he-rpm-lv-bo-qi.md)》。
+现在，启用基于RPM回传数据的陷波滤波器\(组\)比以往更容易了。默认情况下`dshot_bitbang= AUTO`，无需再在部分F4和F7飞控上自行修改定时器和DMA资源。当双向Dshot启用后，RPM回传将被自动激活，这可以在10.6配置器中手动完成。旧的电调固件则需要关闭dshot\_bitbang`set dshot_bitbang = OFF`。更多相关信息，请参阅最新的《[双向Dshot和RPM滤波](../motors-and-esc/shuang-xiang-dshot-he-rpm-lv-bo-qi.md)》。
 
 我们建议在启用RPM滤波器之后仍启用动态陷波滤波器。有关如何在激活RPM滤波器之后调整其余滤波器，请参阅下一节。
 
