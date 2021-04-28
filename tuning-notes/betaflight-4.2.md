@@ -317,3 +317,36 @@ F411飞控应该设置为4k，通常需要进行超频才能获得最佳效果�
 
 保持它为100就好。
 
+### RC信号平滑改进
+
+经过广泛的测试，默认的RC平滑参数被简化并优化了通常来说，不需要更改默认设置。
+
+默认的自动平滑设置将会根据识别出的RC数据包步长间隔动态计算RC平滑的时间常数。这对于大多数RC遥控系统和前馈插值确实非常有效。默认的输入滤波器类型是`BIQUAD`,用于平滑设定点和P。导数滤波器类型是`PT1`, 可以平滑掉前馈轨线中的尖峰。
+
+大多数飞手都应保持默认设置。
+
+`rc_smoothing_auto_smoothness` 用于设置RC信号的“平滑度”。更高的值会更加平滑，但会增加延迟。10是多数情况下的最佳值。竞速飞手可能更喜欢8，甚至5，但是会有更大的抖动，所以并不会很大的改善飞行表现。对于老旧的RC信号会抖动的遥控器来说，20或者40可能会对抖动现象有所改善。
+
+以下是新的默认设置:
+
+```text
+set rc_smoothing_type = FILTER
+set rc_smoothing_input_hz = 0
+set rc_smoothing_derivative_hz = 0
+set rc_smoothing_input_type = BIQUAD
+set rc_smoothing_derivative_type = PT1
+set rc_smoothing_auto_smoothness = 10
+```
+
+### 动态Dterm滤波曲线指数
+
+`dyn_lpf_dterm_curve_expo` 现在随着油门的增加，Dterm低通滤波器的截止频率会比以前更快地上升。Dterm低通滤波器截止频率会零油门时就开始随油门升高，将其设置得大于等于5可以改善对洗桨的抑制。
+
+动态调整的范围, `dyn_lpf_dterm_min_hz` 和 `dyn_lpf_dterm_max_hz`, 仍然保持不变，现在只是会更快地到达最大值。
+
+* 默认值（6）已经很好用了。
+* 1是一个很平缓的曲线-几乎是线性的-在整个油门区间从最小到最大。
+* 6是一个从零油到半油有迅速上升的曲线。
+
+图表请参阅[PR9486](https://github.com/betaflight/betaflight/pull/9486).
+
