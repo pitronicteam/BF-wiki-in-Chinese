@@ -40,7 +40,7 @@
 
 ### 赞助商
 
-感谢我们的赞助商为我们提供的工作动力。更多信息请访问[赞助商页面](zan-zhu-shang.md)。
+感谢我们的赞助商为我们提供的工作动力。更多信息请访问[赞助商页面](sponsors.md)。
 
 [![](.gitbook/assets/diatone.png)](https://www.jahoooo.cn/)[![](.gitbook/assets/iflight-rc.jpg)](https://iflight-rc.taobao.com) ![](.gitbook/assets/rush+.jpg) 
 
