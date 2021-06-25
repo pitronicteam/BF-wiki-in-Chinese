@@ -23,6 +23,7 @@
 
 ## 设置 <a id="configuration"></a>
 
+* [蜂鸣器静音模式](configuration/buzzer-mute-mode.md)
 * [GPS救援模式](configuration/gps-rescue-mode.md)
 * [起飞控制](configuration/launch-control.md)
 * [LED灯带](configuration/led-strip-setup.md)
