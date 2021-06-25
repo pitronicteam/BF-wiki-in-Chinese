@@ -27,6 +27,7 @@
 * [GPS救援模式](configuration/gps-rescue-mode.md)
 * [起飞控制](configuration/launch-control.md)
 * [LED灯带](configuration/led-strip-setup.md)
+* [大容量存储设备（MSC）支持](configuration/mass-storage-device-msc-support.md)
 * [瘫痪模式](configuration/paralyze.md)
 * [资源重新映射](configuration/resource-remapping.md)
 * [统一目标与您](configuration/unified-targets-and-you.md)
