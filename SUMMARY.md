@@ -61,4 +61,5 @@
 ## 故障排除 <a id="development"></a>
 
 * [飞控板设计资源](development/flight-controller-design-resources.md)
+* [硬件参考](development/hardware-reference.md)
 
