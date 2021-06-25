@@ -6,7 +6,7 @@
 
 ## 新手入门 <a id="getting-started"></a>
 
-* [安装Betaflight](getting-started/an-zhuang-betaflight.md)
+* [安装Betaflight](getting-started/installation.md)
 * [飞行技巧](getting-started/flying-tips.md)
 
 ## 发行说明 <a id="release-notes"></a>
