@@ -23,6 +23,7 @@
 
 ## 设置 <a id="configuration"></a>
 
+* [起飞控制](configuration/qi-fei-kong-zhi.md)
 * [GPS救援模式](configuration/gps-rescue-mode.md)
 * [LED灯带](configuration/led-deng-dai.md)
 * [瘫痪模式](configuration/tan-huan-mo-shi.md)
