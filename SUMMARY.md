@@ -30,6 +30,7 @@
 * [大容量存储设备（MSC）支持](configuration/mass-storage-device-msc-support.md)
 * [瘫痪模式](configuration/paralyze.md)
 * [资源重新映射](configuration/resource-remapping.md)
+* [支持的传感器](configuration/supported-sensors.md)
 * [统一目标与您](configuration/unified-targets-and-you.md)
 
 ## 摄像头、图传和OSD <a id="camera-vtx-and-osd"></a>
