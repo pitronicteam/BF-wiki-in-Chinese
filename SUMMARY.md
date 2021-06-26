@@ -47,6 +47,7 @@
 * [D\_MIN](pid-tuning-rates-and-filters/d_min.md)
 * [前馈2.0](pid-tuning-rates-and-filters/feedforward-2.0.md)
 * [整合式偏航控制](pid-tuning-rates-and-filters/integrated-yaw.md)
+* [Rate计算器](pid-tuning-rates-and-filters/rate-calculator.md)
 
 ## 接收机/HID <a id="receiver-hid"></a>
 
