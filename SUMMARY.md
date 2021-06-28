@@ -40,6 +40,7 @@
 ## 电机与电调 <a id="motors-and-esc"></a>
 
 * [双向Dshot和RPM滤波器](motors-and-esc/bidirectional-dshot-and-rpm-filter.md)
+* [电调编程透传](motors-and-esc/esc-programming-pass-through.md)
 * [重新映射电机](motors-and-esc/remapping-motors.md)
 
 ## PID、Rate和滤波器 <a id="pid-tuning-rates-and-filters"></a>
