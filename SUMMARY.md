@@ -35,6 +35,7 @@
 
 ## 摄像头、图传和OSD <a id="camera-vtx-and-osd"></a>
 
+* [外部OSD / MWOSD](camera-vtx-and-osd/external-osd-mwosd.md)
 * [图传表](camera-vtx-and-osd/vtx-tables.md)
 
 ## 电机与电调 <a id="motors-and-esc"></a>
