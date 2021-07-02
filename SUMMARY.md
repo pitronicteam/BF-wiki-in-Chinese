@@ -53,6 +53,7 @@
 
 ## 接收机/HID <a id="receiver-hid"></a>
 
+* [手动训练模式](receiver-hid/acro-trainer.md)
 * [解锁顺序与安全](receiver-hid/arming-sequence-and-safety.md)
 
 ## 串行通信 <a id="serial-communication"></a>
