@@ -24,6 +24,7 @@
 ## 设置 <a id="configuration"></a>
 
 * [3D设置](configuration/3d-setup.md)
+* [气压计配置](configuration/barometer-configuration-for-3.2.md)
 * [蜂鸣器静音模式](configuration/buzzer-mute-mode.md)
 * [GPS救援模式](configuration/gps-rescue-mode.md)
 * [起飞控制](configuration/launch-control.md)
