@@ -4,7 +4,7 @@
 
 1. 将飞控连接到电脑并记下COM端口号
 2. 打开BLHeliSuite，选择通信端口，并单击Connect
-3. 在“Select ATMEL/SILABS Interface”菜单中选择“SILABS BLHeli Botloader\(Cleanflight\)”
+3. 在“Select ATMEL/SILABS Interface”菜单中选择“SILABS BLHeli Botloader(Cleanflight)”
 4. 为电调通电
 5. 单击“Read Settings”
 
@@ -20,7 +20,7 @@ Flash Loader是一个Chrome应用程序，必须在启用了“开发人员模�
 
 您并不能直接在Flash Loader应用程序中直接开启透传，而是需要在CLI中通过命令启用透传协议。
 
-KISSESC\_flashloader可以在[第一篇Dshot线程](https://www.rcgroups.com/forums/showthread.php?2756129-Dshot-testing-a-new-digital-parallel-ESC-throttle-signal)的附件中找到。
+KISSESC_flashloader可以在[第一篇Dshot线程](https://www.rcgroups.com/forums/showthread.php?2756129-Dshot-testing-a-new-digital-parallel-ESC-throttle-signal)的附件中找到。
 
 1号电调的命令：escprog ki 1
 
@@ -42,8 +42,6 @@ KISSESC\_flashloader可以在[第一篇Dshot线程](https://www.rcgroups.com/for
 如果上述命令不起作用，则证明电调透传协议尚未编译进飞控固件。
 
 ### 当您在工作台插上电池进行测试或烧写电调固件、校准或打开配置程序时，应该始终使用限流保护器！
-
-
 
 
 

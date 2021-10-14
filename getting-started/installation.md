@@ -5,7 +5,9 @@
 使用Betaflight配置程序，选择“固件烧写工具”选项卡，然后选择以两种不同方式（在线或本地固件）中的一种进行刷新。
 
 1. 加载在线固件。 选择左上角的飞控目标和版本。按屏幕右下方的“从网络加载固件”。
-2. 加载本地固件。 按下“从本地电脑加载固件”按钮，您现在可以浏览含有Betaflight固件文件的文件夹。选择与您的飞行控制器匹配的正确固件。   ![](../.gitbook/assets/flash-firmware.png)   不点选任何选项（默认）并按下“烧写固件”。配置程序工具将擦除飞控芯片，并会将所选固件刷写到您的飞控中。以上操作都假定您已安装了正确的驱动程序，请继续阅读以获取详细信息。
+2. 加载本地固件。 按下“从本地电脑加载固件”按钮，您现在可以浏览含有Betaflight固件文件的文件夹。选择与您的飞行控制器匹配的正确固件。\
+     ![](../.gitbook/assets/flash-firmware.png)  \
+   不点选任何选项（默认）并按下“烧写固件”。配置程序工具将擦除飞控芯片，并会将所选固件刷写到您的飞控中。以上操作都假定您已安装了正确的驱动程序，请继续阅读以获取详细信息。
 
 所有的飞控基本上都使用两种USB设备：
 
@@ -17,11 +19,11 @@
 
 请注意，此章节仅针对那些不使用硬件串行适配器的飞控 - 例如FTDI或Silabs CP210x。
 
-可以使用这个方便的工具修复驱动程序问题： [https](https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe) : [//impulserc.blob.core.windows.net/utilities/ImpulseRC\_Driver\_Fixer.exe](https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe)
+可以使用这个方便的工具修复驱动程序问题： [https](https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe) : [//impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe](https://impulserc.blob.core.windows.net/utilities/ImpulseRC_Driver_Fixer.exe)
 
 它需要使用.NET框架V4.5。可以在这里下载： [https](https://www.microsoft.com/en-au/download/details.aspx?id=30653) : [//www.microsoft.com/zh-cn/download/details.aspx?id=30653](https://www.microsoft.com/en-au/download/details.aspx?id=30653)
 
-如果您在连接至飞控时出现问题：  
+如果您在连接至飞控时出现问题：\
 [![](https://img.youtube.com/vi/m4ygG6Y5zXI/0.jpg)](https://www.youtube.com/watch?v=m4ygG6Y5zXI)
 
 ### Windows下使用DFU模式进行固件烧录 - USB DFU
@@ -31,8 +33,9 @@
 1. 下载Zadig：[ http://zadig.akeo.ie/](../)
 2. 将设备置于DFU模式。如果这是第一次烧写Betaflight，则需要在插入USB之前短路BL或Boot（或按住BOOT按钮）。
 3. 打开Zadig。
-4. 选项 -&gt; 列出所有设备。
-5. 单击下拉框，然后单击列出的设备STM32 BOOTLOADER   ![](../.gitbook/assets/zadig-dfu.png) 
+4. 选项 -> 列出所有设备。
+5. 单击下拉框，然后单击列出的设备STM32 BOOTLOADER\
+     ![](../.gitbook/assets/zadig-dfu.png) 
 6. 在绿色箭头右侧的框中，选择WinUSB（v6.1.7600.16385）
 7. 单击安装驱动程序。
 8. 安装完成后，重新启动计算机（在重启这一点上，您可以作弊，只需要确保浏览器重启，但这样并不能保证其仍能正常工作）。如果重启期间USB电源仍然有输出，飞控应保持在DFU模式下。如果重启导致USB断电，请再次执行步骤2。
@@ -69,8 +72,8 @@ Linux需要udev规则，以允许用于对USB设备进行写入访问。如果�
 
 由于我们将使用CLI，因此只需将此命令复制并粘贴到您的中断中，它将为您创建所需的文件：
 
-`(echo '# DFU (Internal bootloader for STM32 MCUs)'    
-echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0664", GROUP="plugdev"') | sudo tee /etc/udev/rules.d/45-stdfu-permissions.rules > /dev/null`
+`(echo '# DFU (Internal bootloader for STM32 MCUs)'  `\
+`echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0664", GROUP="plugdev"') | sudo tee /etc/udev/rules.d/45-stdfu-permissions.rules > /dev/null`
 
 创建的文件是`/etc/udev/rules.d/45-stdfu-permissions.rules`，当飞控处于DFU模式时使用。
 
@@ -86,8 +89,8 @@ echo 'ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}
 
 检查设备的当前权限和所有者/组。
 
-`[user@machine ~]$ ls -la /dev/ttyUSB0    
-crw-rw----. 1 root dialout 188, 0 Apr 3 21:16 /dev/ttyUSB0`
+`[user@machine ~]$ ls -la /dev/ttyUSB0  `\
+`crw-rw----. 1 root dialout 188, 0 Apr 3 21:16 /dev/ttyUSB0`
 
 对于此配置，所有者为root，组为dialout，并且所有者/组都具有读取/写入权限。
 
@@ -95,7 +98,7 @@ crw-rw----. 1 root dialout 188, 0 Apr 3 21:16 /dev/ttyUSB0`
 
 对于这种情况，我们使用usermod命令将我们的用户ID：user添加到dialout组中。此命令需要root权限才能运行。
 
-\[user@machine ~\]$ sudo usermod -a -G dialout user
+\[user@machine \~]$ sudo usermod -a -G dialout user
 
 您将需要注销，然后重新登录。现在您应该可以访问该设备了。
 
@@ -134,11 +137,10 @@ Joshua Bardwell有关Betaflight配置程序的新视频：
 
 [https://www.youtube.com/watch?v=VAHUZZXIn9o](https://www.youtube.com/watch?v=VAHUZZXIn9o)
 
-此处提供有关如何使用Betaflight刷写飞控的分步指南： [http://quadquestions.com/blog/2015/12/25/betaflight\_flashing/](http://quadquestions.com/blog/2015/12/25/betaflight_flashing/)
+此处提供有关如何使用Betaflight刷写飞控的分步指南： [http://quadquestions.com/blog/2015/12/25/betaflight_flashing/](http://quadquestions.com/blog/2015/12/25/betaflight_flashing/)
 
-如何在CC3D上刷写Betaflight： [http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477](http://www.rcgroups.com/forums/showpost.php?p=34196999&postcount=21477)
+如何在CC3D上刷写Betaflight： [http://www.rcgroups.com/forums/showpost.php?p=34196999\&postcount=21477](http://www.rcgroups.com/forums/showpost.php?p=34196999\&postcount=21477)
 
 在常见问题页面上有一个名为“我该下载哪个HEX文件并刷到我的飞控里”的主题，该主题旨在帮助人们正确选择在飞控板上使用的固件。
 
 本站还可以从赞助商列表内查看部分飞控设备制造商及其相关信息。
-

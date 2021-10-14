@@ -57,4 +57,3 @@
 * 这将启用OSD选项卡和完整的DISPLAYPORT支持
 
 另请参阅： [CMS adjustment](https://github.com/betaflight/betaflight/wiki/OSD-and-CMS-Adjusting-Screen)
-

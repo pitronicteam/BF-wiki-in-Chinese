@@ -26,7 +26,7 @@
 * ICM20689
 * ICM40625
 * L3GD20
-* LSM6DSO\(LSM6DSOX\)
+* LSM6DSO(LSM6DSOX)
 
 ### 气压计
 
@@ -43,4 +43,3 @@
 * HCSR04
 * Benewake LIDAR TF02
 * Benewake LIDAR TFmini
-

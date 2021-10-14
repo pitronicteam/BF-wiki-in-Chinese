@@ -28,12 +28,12 @@
 
 数据手册/参考手册的摘录，涵盖了可能的引脚、定时器、DMA分配：
 
-* [STM32F3](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f3_pins_timers_dma.pdf)
-* [STM32F405](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f405_pins_timers_dma.pdf)
-* [STM32F411](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f411_pins_timers_dma.pdf)
-* [STM32F722](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f722_pins_timers_dma.pdf)
-* [STM32F745](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f745_pins_timers_dma.pdf)
-* [STM32H743](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32h743_pins.pdf)（仅含引脚）
+* [STM32F3](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f3\_pins_timers_dma.pdf)
+* [STM32F405](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f405\_pins_timers_dma.pdf)
+* [STM32F411](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f411\_pins_timers_dma.pdf)
+* [STM32F722](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f722\_pins_timers_dma.pdf)
+* [STM32F745](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32f745\_pins_timers_dma.pdf)
+* [STM32H743](https://github.com/betaflight/betaflight/wiki/reference/stm/stm32h743\_pins.pdf)（仅含引脚）
 
 ### 协议
 
@@ -42,4 +42,3 @@
 [IBus 遥测规范](https://github.com/betaflight/betaflight/wiki/Ibus-telemetry)
 
 、
-

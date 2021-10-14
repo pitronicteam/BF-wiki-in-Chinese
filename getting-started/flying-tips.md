@@ -6,9 +6,9 @@
 
 ## 内容
 
-1. [如何在手动模式下以FPV视角操纵多轴飞行器](fei-hang-ji-qiao#ru-he-zai-shou-dong-mo-shi-xia-yi-fpv-shi-jiao-cao-zong-duo-zhou-fei-hang-qi)
-2. [在手动模式下如何协调转弯](fei-hang-ji-qiao#zai-shou-dong-mo-shi-xia-xie-tiao-zhuan-wan)
-3. [如何以FPV视角操纵多轴飞行器](fei-hang-ji-qiao#ru-he-yi-fpv-shi-jiao-cao-zong-duo-zhou-fei-hang-qi)
+1. [如何在手动模式下以FPV视角操纵多轴飞行器](https://app.gitbook.com/s/-M4XZa_Xo8uuKqMMASip/getting-started/fei-hang-ji-qiao#ru-he-zai-shou-dong-mo-shi-xia-yi-fpv-shi-jiao-cao-zong-duo-zhou-fei-hang-qi)
+2. [在手动模式下如何协调转弯](https://app.gitbook.com/s/-M4XZa_Xo8uuKqMMASip/getting-started/fei-hang-ji-qiao#zai-shou-dong-mo-shi-xia-xie-tiao-zhuan-wan)
+3. [如何以FPV视角操纵多轴飞行器](https://app.gitbook.com/s/-M4XZa_Xo8uuKqMMASip/getting-started/fei-hang-ji-qiao#ru-he-yi-fpv-shi-jiao-cao-zong-duo-zhou-fei-hang-qi)
 
 ## 如何在手动模式下以FPV视角操纵多轴飞行器
 
@@ -27,4 +27,3 @@ Joshua·Bardwell的27课系列非常出色，他使用了免费的FPV Freerider�
 JackFPV是一个新手，但他的学习速度很快。请随着他的FPV系列视频，让他来教我们如何在Liftoff模拟器和现实中飞行。
 
 [http://www.youtube.com/playlist?list=PLXWuhwtHmw1w9G6j3P1Y2ZLRiiLqmFe2B](http://www.youtube.com/playlist?list=PLXWuhwtHmw1w9G6j3P1Y2ZLRiiLqmFe2B)
-

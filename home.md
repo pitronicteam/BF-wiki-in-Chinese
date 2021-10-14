@@ -14,7 +14,7 @@ Betaflight是由BorisB启动的Cleanflight分支项目。它曾经被用作Clean
 
 可以在[这里](https://github.com/betaflight/betaflight/releases)找到固件发行版，或从配置程序内下载。还应检查右侧的“升级列表”，以获取发行说明和各个版本上的其他详细信息。
 
-_**警告：这是测试版！**_  
+_**警告：这是测试版！**_\
 如果您想为开发做出贡献，可从[Betaflight生成服务器](https://ci.betaflight.tech/job/Betaflight/)直接下载最新的内测版本。
 
 您还可以在[此处](https://github.com/betaflight/betaflight/milestones)找到版本发布计划。
@@ -36,4 +36,3 @@ _**警告：这是测试版！**_
 如果您觉得Betaflight对您非常有用，请考虑资金资助Betaflight开发团队：
 
 [![Donate](https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif)](https://paypal.me/betaflight)
-

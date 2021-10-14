@@ -30,7 +30,7 @@ GPS救援不是一个完整的返航功能。这意味着它不能自动将您�
 
 ## 设置GPS救援
 
-  
+\
 为了在飞机上设置GPS救援，我们强烈推荐从头开始进行完整的设置过程。此步骤旨在受控环境中联系，并充分理解GPS救援的运行逻辑及短板。使用现成的GPS救援设置（复制他人的设置）会降低救援成功的几率。
 
 #### 在Betaflight“模式”页面为GPS救援模式添加一个控制通道。确认此模式可被正常激活（测试前请卸除螺旋桨）。
@@ -53,29 +53,29 @@ GPS救援不是一个完整的返航功能。这意味着它不能自动将您�
 
 这是飞机距起飞点多远开始下降的距离，以米为单位。
 
-`set gps_rescue_ascend_rate = [number] (默认为500)` \(在BF4.1中加入\)
+`set gps_rescue_ascend_rate = [number] (默认为500) `(在BF4.1中加入)
 
 这是飞机爬升时的垂直速度，以厘米/秒为单位。
 
-`set gps_rescue_descend_rate = [number] (默认为150)` \(在BF4.1中加入\)
+`set gps_rescue_descend_rate = [number] (默认为150)` (在BF4.1中加入)
 
 这是飞机下降的垂直速度，以厘米/秒为单位。
 
-`gps_rescue_throttle_min` 和 `gps_rescue_throttle_max` 在BF4.1中仅用于限制新PID控制器的干预\([https://github.com/betaflight/betaflight/pull/8015](https://github.com/betaflight/betaflight/pull/8015)\)
+`gps_rescue_throttle_min` 和 `gps_rescue_throttle_max` 在BF4.1中仅用于限制新PID控制器的干预([https://github.com/betaflight/betaflight/pull/8015](https://github.com/betaflight/betaflight/pull/8015))
 
-`gps_rescue_alt_mode = [MAX_ALT, FIXED_ALT, CURRENT_ALT]` \(在BF4.1中加入\)
+`gps_rescue_alt_mode = [MAX_ALT, FIXED_ALT, CURRENT_ALT]` (在BF4.1中加入)
 
 现在我们可以设置GPS救援的高度了。
 
-**MAX\_ALT是默认的设置，高度就是**`gps_rescue_initial_alt，`**或者飞行过程中记录到的最大高度+15米。**
+**MAX_ALT是默认的设置，高度就是**`gps_rescue_initial_alt，`**或者飞行过程中记录到的最大高度+15米。**
 
-**FIXED\_ALT，**飞机总是尝试保持设置的高度值。\(`gps_rescue_initial_alt`\)
+**FIXED_ALT，**飞机总是尝试保持设置的高度值。(`gps_rescue_initial_alt`)
 
-**CURRENT\_ALT，** 飞机保持触发GPS救援时的高度（不建议使用）。
+**CURRENT_ALT，** 飞机保持触发GPS救援时的高度（不建议使用）。
 
 #### 现在可以去测试GPS救援了。
 
-等待您的GPS模块获得良好的定位。默认情况下，如果卫星数少于`gps_rescue_min_sats` \(默认是8\)，飞机将无法被解锁。
+等待您的GPS模块获得良好的定位。默认情况下，如果卫星数少于`gps_rescue_min_sats` (默认是8)，飞机将无法被解锁。
 
 ### 我们建议按如下步骤进行测试。
 
@@ -91,17 +91,17 @@ GPS救援不是一个完整的返航功能。这意味着它不能自动将您�
 
 你可能会注意到，飞机很难保持稳定的高度。有时，这会在GPS高度读数不稳定时发生，因为高度控制器的期望值总在不断变化。如果GPS高度读数很稳定，但是飞机仍不能稳定在设定值附近10米的范围内，就需要调整高度油门的PID增益了。以下是这些参数：
 
-`gps_rescue_throttle_P`    
-`gps_rescue_throttle_I   
-gps_rescue_throttle_D`
+`gps_rescue_throttle_P ` \
+`gps_rescue_throttle_I `\
+`gps_rescue_throttle_D`
 
 我们不希望大多数人都会精调返航速度增益，默认情况下的PID增益是：
 
-`gps_rescue_velocity_P = 80  
-gps_rescue_velocity_I = 10  
-gps_rescue_velocity_D = 20`
+`gps_rescue_velocity_P = 80`\
+`gps_rescue_velocity_I = 10`\
+`gps_rescue_velocity_D = 20`
 
-当飞机可靠地返航一次之后，就可以逐步加大测试的距离和范围。当配置可靠的时候，就可以将GPS救援设置为失控保护。  
+当飞机可靠地返航一次之后，就可以逐步加大测试的距离和范围。当配置可靠的时候，就可以将GPS救援设置为失控保护。\
 `set failsafe_procedure = GPS-RESCUE`
 
 完成上面这个设置后，GPS救援将在失控时被激活。
@@ -110,7 +110,7 @@ v4.0.x备注 - 当遥控信号恢复时，飞手将立即获得控制权。所�
 
 v4.1和更高版本 - 当遥控信号恢复后，仅当roll/pitch/yaw三个轴的杆量输入之和超过`failsafe_stick_threshold`的百分比值时，失控保护才会被退出，飞手才将获得控制权。该参数的默认值是30，意味着roll，pitch，yaw需要从中点移动至少30%失控保护才会关闭。如果要减少切换过程的突变性，可以选择降低这个值。
 
-另外，可以在配置程序中“失控保护”页面（需开启专家模式）配置失控保护，也可以使用OSD菜单\(`FEATURES > FAILSAFE`\)来设置。OSD界面也可以很方便的在有限空间（如室内或树林中）飞行时禁用GPS救援功能。请确认在合适的时候将其重新启用。
+另外，可以在配置程序中“失控保护”页面（需开启专家模式）配置失控保护，也可以使用OSD菜单(`FEATURES > FAILSAFE`)来设置。OSD界面也可以很方便的在有限空间（如室内或树林中）飞行时禁用GPS救援功能。请确认在合适的时候将其重新启用。
 
 ## 处理错误情况/系统自检（非常重要）
 
@@ -160,24 +160,24 @@ v4.1和更高版本 - 当遥控信号恢复后，仅当roll/pitch/yaw三个轴�
 
 **Betaflight 4.1**
 
-* 当GPS救援作为失控保护被激活时，使用摇杆以恢复控制。\([https://github.com/betaflight/betaflight/pull/7936](https://github.com/betaflight/betaflight/pull/7936)\)
+* 当GPS救援作为失控保护被激活时，使用摇杆以恢复控制。([https://github.com/betaflight/betaflight/pull/7936](https://github.com/betaflight/betaflight/pull/7936))
 
 **Betaflight 4.0**
 
-* 防止在进入GPS救援模式时立即触发碰撞检测。\([https://github.com/betaflight/betaflight/pull/7034](https://github.com/betaflight/betaflight/pull/7034)\)
-* 允许更改与返航点的最小距离。\([https://github.com/betaflight/betaflight/pull/6404](https://github.com/betaflight/betaflight/pull/6404)\)
+* 防止在进入GPS救援模式时立即触发碰撞检测。([https://github.com/betaflight/betaflight/pull/7034](https://github.com/betaflight/betaflight/pull/7034))
+* 允许更改与返航点的最小距离。([https://github.com/betaflight/betaflight/pull/6404](https://github.com/betaflight/betaflight/pull/6404))
 * 修复在初始阶段系统自检误报STALLED/FLYAWAY
-* \([https://github.com/betaflight/betaflight/pull/7254](https://github.com/betaflight/betaflight/pull/7254)\)
-* 增加了用于标明GPS救援功能不可靠的标识。\([https://github.com/betaflight/betaflight/pull/7256](https://github.com/betaflight/betaflight/pull/7256)\)
-* 增加了在没有GPS定位或卫星数量不足时允许解锁的明确设置项：gps\_rescue\_allow\_arming\_without\_fix \([https://github.com/betaflight/betaflight/pull/7320](https://github.com/betaflight/betaflight/pull/7320)\)
+* ([https://github.com/betaflight/betaflight/pull/7254](https://github.com/betaflight/betaflight/pull/7254))
+* 增加了用于标明GPS救援功能不可靠的标识。([https://github.com/betaflight/betaflight/pull/7256](https://github.com/betaflight/betaflight/pull/7256))
+* 增加了在没有GPS定位或卫星数量不足时允许解锁的明确设置项：gps_rescue_allow_arming_without_fix ([https://github.com/betaflight/betaflight/pull/7320](https://github.com/betaflight/betaflight/pull/7320))
 
 **Betaflight 3.5.5**
 
-* 修复在初始阶段系统自检误报STALLED。 \([https://github.com/betaflight/betaflight/pull/7254](https://github.com/betaflight/betaflight/pull/7254)\)
+* 修复在初始阶段系统自检误报STALLED。 ([https://github.com/betaflight/betaflight/pull/7254](https://github.com/betaflight/betaflight/pull/7254))
 
 **Betaflight 3.5.3**
 
-* 修复当“解锁时不转动电机”开始时在激活GPS救援时自动锁定的现象。\([https://github.com/betaflight/betaflight/pull/6979](https://github.com/betaflight/betaflight/pull/6979)\);
+* 修复当“解锁时不转动电机”开始时在激活GPS救援时自动锁定的现象。([https://github.com/betaflight/betaflight/pull/6979](https://github.com/betaflight/betaflight/pull/6979));
 
 **Betaflight 3.5**
 
@@ -186,4 +186,3 @@ v4.1和更高版本 - 当遥控信号恢复后，仅当roll/pitch/yaw三个轴�
 **Betaflight 3.4**
 
 * 系统自检包括一个在GPS救援激活时，飞机距返航点不少于100米的检查。当系统自检被打开，如果GPS激活（手动或被失控保护）时飞机距返航点100米以内，飞机将直接坠落。
-

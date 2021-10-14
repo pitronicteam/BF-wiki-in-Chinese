@@ -3,8 +3,8 @@
 ### 近期公告
 
 * 适用于F3飞控的BF 4.1定制版固件，[在这里获取！](https://github.com/joelucid/betaflight/releases)
-* 适用于BLHeli\_S电调的带有双向Dshot的免费固件，[在这里获取！](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1)
-* **本站强烈不推荐使用JESC**，但您仍可以在[这里](https://jflight.net/)了解JESC。
+* 适用于BLHeli_S电调的带有双向Dshot的免费固件，[在这里获取！](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1)
+* **本站强烈不推荐使用JESC**，但您仍可以在[这里](https://jflight.net)了解JESC。
 * 现在，BLHeli\_32的32.7.0已完全支持双向Dshot。您可以直接从BLHeliSuite32中直接刷写，而无需手动下载固件文件。
 
 ### 介绍
@@ -19,11 +19,11 @@
 
 [双向Dshot](https://github.com/betaflight/betaflight/pull/7264)是Betaflight 4.x的一项新功能。它使飞控能够在每个电机的电调信号线上接受到准确的RPM回传。这项新功能并不需要额外的电调遥测信号线，也不需要额外的反向遥测通道。每个从飞控发出的Dshot命令帧包含一条命令，这条命令会向电调请求实时的eRPM传感器读数。飞控需要预先知道电机的磁极数，这样就可以将eRPM转换为RPM。
 
-[RPM滤波器](https://github.com/betaflight/betaflight/pull/7271)，运行在陀螺仪信号和Dterm信号上，共计36个。利用RPM回传数据来实现对电机噪声以手术级精度过滤。默认情况下，飞控在Pitch、Roll和Yaw上各运行12个陷波滤波器\(Notch\)，用于过滤陀螺仪内的每个电机噪声的前三级谐波。
+[RPM滤波器](https://github.com/betaflight/betaflight/pull/7271)，运行在陀螺仪信号和Dterm信号上，共计36个。利用RPM回传数据来实现对电机噪声以手术级精度过滤。默认情况下，飞控在Pitch、Roll和Yaw上各运行12个陷波滤波器(Notch)，用于过滤陀螺仪内的每个电机噪声的前三级谐波。
 
 为了使RPM滤波器正常工作，电调必须支持双向Dshot协议，并且必须在CLI中启用双向Dshot功能。
 
-刷有Betaflight 4.1的所有飞控与刷有最新版本固件的BLHeli\_32和BLHeli\_S电调均支持这两个功能。Betaflight 4.0已不再支持此功能。
+刷有Betaflight 4.1的所有飞控与刷有最新版本固件的BLHeli\_32和BLHeli_S电调均支持这两个功能。Betaflight 4.0已不再支持此功能。
 
 ### **解锁前的预检测**
 
@@ -37,13 +37,13 @@ Betaflight 4.1中的双向Dshot协议与Betaflight 4.0中的不同（4.1中的�
 
 **对于BLHeli\_32电调**，双向Dshot是32.7.0中完全支持的功能。只需使用BLHeliSuite32刷写新版本固件即可。
 
-**对于BLHeli\_S电调**，请点击[这里](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1/BLHeli_S%20SiLabs)下载JazzMaverick的固件。使用开源的[blheli配置程序](https://github.com/blheli-configurator/blheli-configurator/releases)进行刷写。
+**对于BLHeli_S电调**，请点击[这里](https://github.com/JazzMaverick/BLHeli/tree/JazzMaverick-patch-1/BLHeli_S%20SiLabs)下载JazzMaverick的固件。使用开源的[blheli配置程序](https://github.com/blheli-configurator/blheli-configurator/releases)进行刷写。
 
 ### Betaflight配置
 
 #### 电机磁极数
 
-运行8k/8k时，请选择Dshot600。电调向飞控发送eRPM，需要利用电机的磁极数量以将其换算成RPM。这些信息可以在电机转子上找得到，而不是绕组所在的定子磁铁数量。标准的5寸\(穿越机\)电机有14个磁极，因此14是默认设置。较小的电机通常有12个磁极。如果电机磁极数不是14，请自行计数或者查看电机的规格，并且在Betaflight配置程序的配置页面内更改磁铁数量。
+运行8k/8k时，请选择Dshot600。电调向飞控发送eRPM，需要利用电机的磁极数量以将其换算成RPM。这些信息可以在电机转子上找得到，而不是绕组所在的定子磁铁数量。标准的5寸(穿越机)电机有14个磁极，因此14是默认设置。较小的电机通常有12个磁极。如果电机磁极数不是14，请自行计数或者查看电机的规格，并且在Betaflight配置程序的配置页面内更改磁铁数量。
 
 #### Dshot150，Dshot300还是Dshot600？
 
@@ -51,7 +51,7 @@ Betaflight 4.1中的双向Dshot协议与Betaflight 4.0中的不同（4.1中的�
 
 若PID速率为8k，则必须使用Dshot600；若使用Dshot300，则将每两个PID周期更新一次电机转速。
 
-在L型电调上（BLHeli\_S的L型号电调，其主控为EFM8BB1），强烈建议使用Dshot150，并使用2k/2k的控制速率。
+在L型电调上（BLHeli_S的L型号电调，其主控为EFM8BB1），强烈建议使用Dshot150，并使用2k/2k的控制速率。
 
 #### 配置片段
 
@@ -71,12 +71,12 @@ RPM滤波器可以在不增加太多延迟的情况下清除几乎所有的电�
 
 RPM滤波器也无法消除频率特性固定的机架共振噪声。最好开启动态陷波滤波器来抑制这些噪声。
 
-由于现在不再需要使用动态陷波滤波器来控制电机噪声，因此需要重新配置动态陷波滤波器。在配置程序的“滤波”页面内，将动态陷波滤波范围设置为“中”，将“动态陷波滤波器宽度百分比”设置为0，将“动态陷波滤波器Q”设置为250。  
-![](../.gitbook/assets/rpmfilter-dynamic_filter_4.1_settings.png) 
+由于现在不再需要使用动态陷波滤波器来控制电机噪声，因此需要重新配置动态陷波滤波器。在配置程序的“滤波”页面内，将动态陷波滤波范围设置为“中”，将“动态陷波滤波器宽度百分比”设置为0，将“动态陷波滤波器Q”设置为250。\
+![](../.gitbook/assets/RPMFILTER-dynamic_filter\_4.1\_settings.png) 
 
 若您的飞机在现有情况下飞行良好，请不要在开启RPM滤波后的首次试飞时更改任何滤波器设置。对于已经有一定问题的机器和新机器来说，我们建议从4.1默认的低通滤波器开始调整。下面代码段将使用4.1默认滤波设置，在0油门时延迟约为3.5ms，在全油门时延迟约为1.1ms。
 
-```text
+```
 # 4.1默认低通滤波器设置
 
 set gyro_lowpass_type = PT1
@@ -114,7 +114,7 @@ set dterm_lowpass2_hz = 150
 
 下面的代码片段将所有低通滤波器上移约50%，从而将总延迟降低到0油门时延迟约为2.3ms，全油门时延迟约为0.9ms：
 
-```text
+```
 # 4.1低通滤波器设置提升1.5倍
 
 set gyro_lowpass_type = PT1
@@ -136,7 +136,7 @@ set dterm_lowpass2_hz = 200
 
 下一步将是使用默认值的2倍的设定值。只有最干净的飞机才能适应这种滤波设置。但是，滤波器延迟将变为正常值的一般，这可以大幅抑制洗桨震颤。0油门时延迟约为1.7ms，全油门时约为0.65ms：
 
-```text
+```
 # 4.1低通滤波器设置提升2倍
 
 set gyro_lowpass_hz = 400
@@ -161,14 +161,14 @@ set dterm_lowpass2_hz = 300
 
 下列代码将完全禁用陀螺仪低通滤波1：
 
-```text
+```
 set gyro_lowpass_hz = 0
 set dyn_lpf_gyro_max_hz = 0
 ```
 
 下列代码将完全禁用陀螺仪低通滤波2：
 
-```text
+```
 set gyro_lowpass2_hz = 0
 ```
 
@@ -186,7 +186,7 @@ set gyro_lowpass2_hz = 0
 
 例如，下列代码将使动态陷波滤波器运行范围调整为90-330Hz，并将槽口缩窄，陷波器槽口数量减小为1：
 
-```text
+```
 set dyn_notch_range = LOW
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 200
@@ -195,7 +195,7 @@ set dyn_notch_min_hz = 90
 
 下列代码将使动态陷波滤波器运行范围调整为180-550Hz（单个窄槽口）：
 
-```text
+```
 set dyn_notch_range = MEDIUM
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 200
@@ -220,58 +220,58 @@ set dyn_notch_min_hz = 180
 
 
 
-| 飞控目标 | 配置代码 | 注意 | 支持的电机 |  |
-| :--- | :--- | :--- | :--- | :--- |
-| AG3XF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 \(tested Mister\_M\) |  |
-| AIKONF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf) |  | M1 - M4 \(tested fujin\) |  |
-| AIRBOTF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 \(tested by Asizon\) |  |
-| ALIENFLIGHTNGF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | 无法使用M3，请使用M5-9来替代。LED与M1无法同时工作 | M1-M2, M4-M9 |  |
-| ALIENWHOOP | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 |  |
-| ANYFCF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 M2 M3 M4 M5 M6 M9 |  |
-| ANYFCM7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf) |  | M1 M2 M3 M4 M5 M7 M9 M10 |  |
-| BETAFLIGHTF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1 - M4 ok \(tested Balint\) |  |
-| CLRACINGF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf) |  | M1-M4 ok |  |
-| CLRACINGF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF7-upgrade.cf) | 4号电机不工作，请使用LED焊盘来代替。 | M1 M2 M3 M5 |  |
-| CRAZYBEEF4DX | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 ok \(tested Noctaro\) |  |
-| CRAZYBEEF4FR | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 ok \(tested joelucid\) |  |
-| DALRCF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf) |  | M1-M6 \(tested QuadMcFly\) |  |
-| DALRCF722DUAL | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf) |  | M1-M6. But either M5 or M6 |  |
-| DYSF4PRO | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 \(tested BRadFPV\) |  |
-| ELINF405 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 \(tested elin-neo\) |  |
-| ELINF722 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 \(tested elin-neo\) |  |
-| EXF722DUAL | [Snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL-upgrade.cf) |  | M1-M8 |  |
-| FLYWOOF7DUAL | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M6 |  |
-| FORTINIF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4\(tested QuadMcFly\) |  |
-| FOXEERF722DUAL | [Snippet](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf) |  | M1-M6 |  |
-| FURYF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf) |  | M1-M4, No LED support, Tested RawFPV |  |
-| FURYF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 |  |
-| HAKRCF722 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf) |  | M1-M6 |  |
-| KAKUTEF4V2 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  |  | M1-M4 tested |
-| KISSFCV2F7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf) |  | M1-M6 |  |
-| LUXF4OSD | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  |  | M1-M4 tested \(Mister\_M\) |
-| MAMBAF411 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | DMA & timer reviewed by joelucid |  |
-| MAMBAF722 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf) |  | M1-M4 tested \(kc10kevin\) |  |
-| MATEKF405 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 tested \(Wudz\_17\) |  |
-| MATEKF411 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | DMA & timer reviewed by joelucid |  |
-| MATEKF411RX | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | DMA & timer reviewed by joelucid |  |
-| MATEKF722 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M8 |  |
-| MATEKF722SE | [Snippet](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf) | M5不工作 | M1-M4, M6-M8 |  |
-| MLTEMPF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 \(tested RC2 monko760\) |  |
-| NERO | [Snippet](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf) |  | M1-M8 |  |
-| NOX | [Snippet](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf) |  | M1-M4 |  |
-| NUCLEOF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) | M4不工作但可使用M6代替 | M1-M3,M6 |  |
-| NUCLEOF722 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) | M4不工作但可使用M6代替 | M1-M3,M6 |  |
-| OMNIBUSF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 \(tested omerco\) |  |
-| OMNIBUSF4SD | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 \(tested joe lucid\) |  |
-| OMNIBUSF4FW | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 tested \(skonk\) |  |
-| OMNIBUSF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf) |  | M1-M4 \(tested in RC2 IgguT\) |  |
-| OMNINXTF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M4 |  |
-| PYRODRONEF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf) |  | M1-M4 \(tested fujin\) |  |
-| REVOLTOSD | [Snippet](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf) |  | M1-M4 \(tested JayBird\) |  |
-| SPEEDYBEEF4 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/SPEEDYBEEF4-upgrade.cf) |  | Flavoredcrayon |  |
-| SPRACINGF7DUAL | [Snippet](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf) |  | M1-M10 |  |
-| TMOTORF4 |  | M4-5不工作但可使用M6代替 | M1-M3, M6 |  |
-| YUPIF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf) |  | M1-M6 |  |
+| 飞控目标            | 配置代码                                                                                     | 注意                             | 支持的电机                                |                         |
+| --------------- | ---------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------ | ----------------------- |
+| AG3XF4          | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1 - M4 (tested Mister_M)            |                         |
+| AIKONF4         | [Snippet](https://github.com/betaflight/bidircfg/blob/master/AIKONF4-upgrade.cf)         |                                | M1 - M4 (tested fujin)               |                         |
+| AIRBOTF7        | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 (tested by Asizon)             |                         |
+| ALIENFLIGHTNGF7 | [Snippet](https://github.com/betaflight/bidircfg/blob/master/ALIENFLIGHTNGF7-upgrade.cf) | 无法使用M3，请使用M5-9来替代。LED与M1无法同时工作 | M1-M2, M4-M9                         |                         |
+| ALIENWHOOP      | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4                                |                         |
+| ANYFCF7         | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1 M2 M3 M4 M5 M6 M9                 |                         |
+| ANYFCM7         | [Snippet](https://github.com/betaflight/bidircfg/blob/master/ANYFCM7-upgrade.cf)         |                                | M1 M2 M3 M4 M5 M7 M9 M10             |                         |
+| BETAFLIGHTF4    | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1 - M4 ok (tested Balint)           |                         |
+| CLRACINGF4      | [Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF4-upgrade.cf)      |                                | M1-M4 ok                             |                         |
+| CLRACINGF7      | [Snippet](https://github.com/betaflight/bidircfg/blob/master/CLRACINGF7-upgrade.cf)      | 4号电机不工作，请使用LED焊盘来代替。           | M1 M2 M3 M5                          |                         |
+| CRAZYBEEF4DX    | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 ok (tested Noctaro)            |                         |
+| CRAZYBEEF4FR    | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 ok (tested joelucid)           |                         |
+| DALRCF4         | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF4-upgrade.cf)         |                                | M1-M6 (tested QuadMcFly)             |                         |
+| DALRCF722DUAL   | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DALRCF722DUAL-upgrade.cf)   |                                | M1-M6. But either M5 or M6           |                         |
+| DYSF4PRO        | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 (tested BRadFPV)               |                         |
+| ELINF405        | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 (tested elin-neo)              |                         |
+| ELINF722        | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 (tested elin-neo)              |                         |
+| EXF722DUAL      | [Snippet](https://github.com/betaflight/bidircfg/blob/master/EXF722DUAL-upgrade.cf)      |                                | M1-M8                                |                         |
+| FLYWOOF7DUAL    | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M6                                |                         |
+| FORTINIF4       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4(tested QuadMcFly)              |                         |
+| FOXEERF722DUAL  | [Snippet](https://github.com/betaflight/bidircfg/blob/master/FOXEERF722DUAL-upgrade.cf)  |                                | M1-M6                                |                         |
+| FURYF4          | [Snippet](https://github.com/betaflight/bidircfg/blob/master/FURYF4SD-upgrade.cf)        |                                | M1-M4, No LED support, Tested RawFPV |                         |
+| FURYF7          | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4                                |                         |
+| HAKRCF722       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/HAKRCF722-upgrade.cf)       |                                | M1-M6                                |                         |
+| KAKUTEF4V2      | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                |                                      | M1-M4 tested            |
+| KISSFCV2F7      | [Snippet](https://github.com/betaflight/bidircfg/blob/master/KISSFCV2F7-upgrade.cf)      |                                | M1-M6                                |                         |
+| LUXF4OSD        | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                |                                      | M1-M4 tested (Mister_M) |
+| MAMBAF411       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | DMA & timer reviewed by joelucid     |                         |
+| MAMBAF722       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/MAMBAF722-upgrade.cf)       |                                | M1-M4 tested (kc10kevin)             |                         |
+| MATEKF405       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 tested (Wudz\_17)              |                         |
+| MATEKF411       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | DMA & timer reviewed by joelucid     |                         |
+| MATEKF411RX     | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | DMA & timer reviewed by joelucid     |                         |
+| MATEKF722       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M8                                |                         |
+| MATEKF722SE     | [Snippet](https://github.com/betaflight/bidircfg/blob/master/MATEKF722SE-upgrade.cf)     | M5不工作                          | M1-M4, M6-M8                         |                         |
+| MLTEMPF4        | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 (tested RC2 monko760)          |                         |
+| NERO            | [Snippet](https://github.com/betaflight/bidircfg/blob/master/NERO-upgrade.cf)            |                                | M1-M8                                |                         |
+| NOX             | [Snippet](https://github.com/betaflight/bidircfg/blob/master/NOX-upgrade.cf)             |                                | M1-M4                                |                         |
+| NUCLEOF7        | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         | M4不工作但可使用M6代替                  | M1-M3,M6                             |                         |
+| NUCLEOF722      | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         | M4不工作但可使用M6代替                  | M1-M3,M6                             |                         |
+| OMNIBUSF4       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 (tested omerco)                |                         |
+| OMNIBUSF4SD     | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 (tested joe lucid)             |                         |
+| OMNIBUSF4FW     | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4 tested (skonk)                 |                         |
+| OMNIBUSF7       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/OMNIBUSF7-upgrade.cf)       |                                | M1-M4 (tested in RC2 IgguT)          |                         |
+| OMNINXTF7       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M4                                |                         |
+| PYRODRONEF4     | [Snippet](https://github.com/betaflight/bidircfg/blob/master/PYRODRONEF4-upgrade.cf)     |                                | M1-M4 (tested fujin)                 |                         |
+| REVOLTOSD       | [Snippet](https://github.com/betaflight/bidircfg/blob/master/REVOLT-upgrade.cf)          |                                | M1-M4 (tested JayBird)               |                         |
+| SPEEDYBEEF4     | [Snippet](https://github.com/betaflight/bidircfg/blob/master/SPEEDYBEEF4-upgrade.cf)     |                                | Flavoredcrayon                       |                         |
+| SPRACINGF7DUAL  | [Snippet](https://github.com/betaflight/bidircfg/blob/master/SPRACINGF7DUAL-upgrade.cf)  |                                | M1-M10                               |                         |
+| TMOTORF4        |                                                                                          | M4-5不工作但可使用M6代替                | M1-M3, M6                            |                         |
+| YUPIF7          | [Snippet](https://github.com/betaflight/bidircfg/blob/master/DEFAULT-upgrade.cf)         |                                | M1-M6                                |                         |
 
 下列是配置代码片段的设置说明
 
@@ -293,7 +293,7 @@ set dyn_notch_min_hz = 180
 
 旧版双向Dshot需要使用正常的DMA，而不是DMA brust。关闭DMA brust可能并不适用于特定飞控。你可以通过输入以下命令进行简单的尝试：
 
-> set dshot\_burst=off
+> set dshot_burst=off
 
 并检测你的飞机是否还能够进行飞行。如果可以，请继续下一步操作：
 
@@ -323,7 +323,7 @@ ESC报告eRPM，需要使用电机的磁极数以将其转换为RPM。磁极数�
 
 为此，请在CLI中输入tasks并检查陀螺仪环路速率与您指定的环路速率是否相符（注意，电池应连接飞控已获得准确的环路速率结果）。例如：
 
-```text
+```
 # tasks
 Task list             rate/hz  max/us  avg/us maxload avgload     total/ms
 00 - (         SYSTEM)     10       1       0    0.5%    0.0%         0
@@ -352,7 +352,7 @@ Total (excluding SERIAL)                        46.0%   37.1%
 
 您需要检查GYRO/PID这一行：
 
-```text
+```
 02 - (       GYRO/PID)   7999      43      34   34.8%   27.6%      2845
 ```
 
@@ -366,7 +366,7 @@ Total (excluding SERIAL)                        46.0%   37.1%
 
 此代码将应用4.1默认TPA配置（1250起始，仅衰减D至满油门下65%）。
 
-```text
+```
 set tpa_rate = 65
 set tpa_breakpoint = 1250
 ```
@@ -376,4 +376,3 @@ set tpa_breakpoint = 1250
 [双向Dshot PR](https://github.com/betaflight/betaflight/pull/7264)
 
 [RPM滤波器PR](https://github.com/betaflight/betaflight/pull/7271)
-

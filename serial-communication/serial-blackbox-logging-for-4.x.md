@@ -7,4 +7,3 @@
 对于4.0及更高版本，使用外置串行黑盒记录设备的用户必须使用通信速率更快的黑盒日志记录设备（**例如OpenLager**），并将波特率至少配置为1.5Mbps才能稳定记录。
 
 请参阅[这里](https://github.com/betaflight/betaflight/issues/9043#issuecomment-544333986)以了解不同日志记录速率下的带宽要求。
-
